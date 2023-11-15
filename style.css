@@ -90,7 +90,7 @@ html, body{
     z-index: 99;
     left: 50%;
     transform: translateX(-50%);
-
+    backdrop-filter: blur(10px);
 }
 
 canvas{
@@ -245,11 +245,124 @@ canvas{
     scale: 0.8;
 }
 
+#page6{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
 
-/* Media Query for iPhone XR */
- /* @media only screen and (max-width: 414px) {  
+.left6{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 40px;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+}
+
+.left6 h1{
+    font-size: 60px;
+    
+}
+
+.left6 h4{
+    width: 50%;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.right6{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.right6 video{
+    height: 70%;
+    width: 90%;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#page7{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.right7{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 40px;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+}
+
+.right7 h1{
+    font-size: 60px;
+    
+}
+
+.right7 h4{
+    width: 50%;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.left7{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.left7 video{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.zelt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.zelt h1{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+
+
+
+  @media only screen and (max-width: 414px) {  
     .nav {
-        width: 96%; /* Adjust as needed 
+        width: 96%;  
         left: 50%;
         transform: translateX(-50%);
     }
