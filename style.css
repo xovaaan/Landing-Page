@@ -16,6 +16,7 @@ html, body{
     position: relative;
 }
 #page{
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-color: #E3E0DD;
@@ -94,7 +95,9 @@ html, body{
 
 canvas{
     height: 100vh;
+    position: relative;
     width: 100vw;
+    z-index: 9;
 }
 
 
@@ -129,11 +132,63 @@ canvas{
     text-align: center;
 }
 
+#page2{
+    position: relative;
+    /* z-index: 9; */
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+#page3{
+    position: relative;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+#page4{
+    position: relative;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color:#E3E0DD;
+}
+
+#page4 h1{
+    font-size: 75px;
+    position: absolute;
+    font-weight: 600;
+    z-index: 99;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#page4 h3{
+    font-size: 28px;
+    position: absolute;
+    font-weight: 500;
+    z-index: 99;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#page5{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
 
 /* Media Query for iPhone XR */
-@media only screen and (max-width: 414px) {
+ /* @media only screen and (max-width: 414px) {  
     .nav {
-        width: 96%; /* Adjust as needed */
+        width: 96%; /* Adjust as needed 
         left: 50%;
         transform: translateX(-50%);
     }
